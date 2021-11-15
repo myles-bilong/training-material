@@ -134,7 +134,7 @@
                 العربية
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fnon-dip%2Ftutorial.html&edit-text=&act=url" title="">
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/variant-analysis/tutorials/non-dip/tutorial.html&edit-text=&act=url" title="">
                 And more!
                 </a>
             </div>
@@ -276,7 +276,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:17 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Calling variants in non-diploid systems",
   "interactivityType": "mixed",
@@ -362,20 +362,6 @@
     },
     {
       "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
-      "name": "Quality Control",
-      "description": "Slides for 'Quality Control' tutorial",
-      "learningResourceType": "slides",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
       "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
       "name": "Mapping",
       "description": "Slides for 'Mapping' tutorial",
@@ -394,20 +380,6 @@
       "name": "Mapping",
       "description": "Hands-on for 'Mapping' tutorial",
       "learningResourceType": "hands-on tutorial",
-      "interactivityType": "expositive",
-      "provider": {
-        "@type": "Organization",
-        "email": "galaxytrainingnetwork@gmail.com",
-        "name": "Galaxy Training Network",
-        "url": "https://galaxyproject.org/teach/gtn/"
-      }
-    },
-    {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
-      "name": "Mapping",
-      "description": "Slides for 'Mapping' tutorial",
-      "learningResourceType": "slides",
       "interactivityType": "expositive",
       "provider": {
         "@type": "Organization",
@@ -462,15 +434,24 @@
     <h1 data-toc-skip>Calling variants in non-diploid systems</h1>
     
 
-    <div class="contributors-line">Authors: 
 
- <a href="/training-material/hall-of-fame/nekrut/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/nekrut" alt="Avatar">Anton Nekrutenko</a> <a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/astrovsky01" alt="Avatar">Alex Ostrovsky</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/nekrut/" class="contributor-badge contributor-nekrut"><img src="https://avatars.githubusercontent.com/nekrut?s=27" alt="Avatar">Anton Nekrutenko</a>
+
+
+<a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge contributor-astrovsky01"><img src="https://avatars.githubusercontent.com/astrovsky01?s=27" alt="Avatar">Alex Ostrovsky</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
         <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
@@ -673,6 +654,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
             Galaxy Africa
         </a>
@@ -682,8 +665,6 @@
         <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
             Galaxy India
         </a>
-        
-    
         
     
         
@@ -761,8 +742,6 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
             UseGalaxy.be
         </a>
@@ -816,7 +795,9 @@
 
         <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jun 17, 2021 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
             <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
         </div>
     </blockquote>
@@ -843,7 +824,7 @@
   <li>By assembling a genome first and then <span class="notranslate">mapping</span> against that assembly</li>
 </ol>
 
-<figure id="figure-1"><img src="../../images/ref_vs_assembly.jpg" alt="2 approaches" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> This figure from <span class="citation"><a href="#Olson2015">Olson <i>et al.</i> 2015</a></span> contrasts the two approaches.</figcaption></figure>
+<figure id="figure-1"><img src="../../images/ref_vs_assembly.jpg" alt="2 approaches. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> This figure from <span class="citation"><a href="#Olson2015">Olson <i>et al.</i> 2015</a></span> contrasts the two approaches.</figcaption></figure>
 
 <p>In this tutorial we will take the <em>first</em> path, in which we map <span class="notranslate">reads</span> against an existing assembly. Later in the course, after we learn about assembly approaches, we will try the second approach as well.</p>
 
@@ -914,7 +895,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 <code class="language-plaintext highlighter-rouge">fastqsanger</code>, and fix any missing or wrong datatype assignment</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">fastqsanger</code></li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">fastqsanger</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
@@ -942,7 +923,7 @@ https://zenodo.org/record/1251112/files/raw_mother-ds-2.fq
 
 <p>Once the FastQC jobs runs, you will be able to look at the HTML reports generated by this tool. The data have generally high quality in this example:</p>
 
-<figure id="figure-2"><img src="../../images/mt_qc_plot.png" alt="FastQC output plot" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> FastQC plot for one of the mitochondrial datasets shows that qualities are acceptable for 250 bp <span class="notranslate">reads</span> (mostly in the green, which is at or above [Phred score](https://en.wikipedia.org/wiki/Phred_quality_score) of 30).</figcaption></figure>
+<figure id="figure-2"><img src="../../images/mt_qc_plot.png" alt="FastQC output plot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> FastQC plot for one of the mitochondrial datasets shows that qualities are acceptable for 250 bp <span class="notranslate">reads</span> (mostly in the green, which is at or above [Phred score](https://en.wikipedia.org/wiki/Phred_quality_score) of 30).</figcaption></figure>
 
 <h1 id="mapping-reads-to-a-reference"><span class="notranslate">Mapping</span> <span class="notranslate">reads</span> to a reference</h1>
 
@@ -1287,7 +1268,7 @@ chrM	15326	.	A	G	73749.6	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=2200;CIGAR=1X;DP=2201;DP
 
 <p>After filtering the data with stringent input parameters (restricting base quality to a minimum of 30 and <span class="notranslate">mapping</span> quality to a minimum of 20) a considerable amount of variants due to read-alignment bias exists. <a href="https://github.com/ekg">Erik Garrison</a> has a beautiful illustration of various biases potentially affecting called variants and making a locus sequence-able.</p>
 
-<figure id="figure-3"><img src="../../images/mt_biases.png" alt="Various biases potentially affecting called variants" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Here you can see that in an ideal case (indicated with a green star) a variant is evenly represent by different areas of sequencing <span class="notranslate">reads</span> (cycle and placement biases) and is balanced across the two strands (strand bias). Allele imbalance is not applicable in our case as it reflects significant deviation from the diploid (50/50) expectation.</figcaption></figure>
+<figure id="figure-3"><img src="../../images/mt_biases.png" alt="Various biases potentially affecting called variants. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Here you can see that in an ideal case (indicated with a green star) a variant is evenly represent by different areas of sequencing <span class="notranslate">reads</span> (cycle and placement biases) and is balanced across the two strands (strand bias). Allele imbalance is not applicable in our case as it reflects significant deviation from the diploid (50/50) expectation.</figcaption></figure>
 
 <p>A robust tool set for processing VCF data is provided by <a href="https://github.com/vcflib/vcflib">vcflib</a> developed by Erik Garrison, the author of FreeBayes. One way to filter VCF is using <code class="language-plaintext highlighter-rouge">INFO</code> fields of the VCF dataset. If you look at the VCF dataset shown above you will see all comment lines beginning with <code class="language-plaintext highlighter-rouge">##INFO</code>.  These are <code class="language-plaintext highlighter-rouge">INFO</code> fields. Each VCF record contains a list of <code class="language-plaintext highlighter-rouge">INFO</code> tags describing a wide range of properties for each VCF record. You will see that FreeBayes and NVC differ significantly in the number and types of <code class="language-plaintext highlighter-rouge">INFO</code> fields each of these caller generates. This why the two require different filtering strategies.</p>
 
@@ -1387,9 +1368,9 @@ chrM	5539	.	A	G	3281.62	.	AB=0;ABP=0;AC=1;AF=0.5;AN=2;AO=379;CIGAR=1X;DP=787;DPB
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-display-data-in-vcfiobio"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Display data in VCF.IOBIO</h3>
 
-  <figure id="figure-4"><img src="../../images/mt_vcf_dataset_expanded.png" alt="Expanded output" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> At the bottom there is a link 'display at vcf.iobio'. Clicking on this link will start indexing of VCF datasets, which is required to display them.</figcaption></figure>
+  <figure id="figure-4"><img src="../../images/mt_vcf_dataset_expanded.png" alt="Expanded output. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> At the bottom there is a link 'display at vcf.iobio'. Clicking on this link will start indexing of VCF datasets, which is required to display them.</figcaption></figure>
 
-  <figure id="figure-5"><img src="../../images/mt_vcfiobio.png" alt="VCF.IOBIO overview" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> There are not that many variants to look at in this example. Nevertheless there are helpful statistics such as Transition/Transversion (Ts/Tn) ratio.</figcaption></figure>
+  <figure id="figure-5"><img src="../../images/mt_vcfiobio.png" alt="VCF.IOBIO overview. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> There are not that many variants to look at in this example. Nevertheless there are helpful statistics such as Transition/Transversion (Ts/Tn) ratio.</figcaption></figure>
 </blockquote>
 
 <h2 id="visualising-with-igv">Visualising with IGV</h2>
@@ -1399,7 +1380,7 @@ chrM	5539	.	A	G	3281.62	.	AB=0;ABP=0;AC=1;AF=0.5;AN=2;AO=379;CIGAR=1X;DP=787;DPB
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-display-data-in-igv"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Display data in IGV</h3>
 
-  <figure id="figure-6"><img src="../../images/mt_vcf_dataset_expanded.png" alt="VCFfilter output expanded" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> At the bottom there is a link 'display at IGV: local Human hg38'.</figcaption></figure>
+  <figure id="figure-6"><img src="../../images/mt_vcf_dataset_expanded.png" alt="VCFfilter output expanded. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> At the bottom there is a link 'display at IGV: local Human hg38'.</figcaption></figure>
 
   <p>The difference between ‘local’ and ‘Human hg38’ links is explained in the following video:</p>
 
@@ -1407,7 +1388,7 @@ chrM	5539	.	A	G	3281.62	.	AB=0;ABP=0;AC=1;AF=0.5;AN=2;AO=379;CIGAR=1X;DP=787;DPB
 
   <p>Visualizing our FreeBayes dataset will produce this:</p>
 
-  <figure id="figure-7"><img src="../../images/mt_igv.png" alt="IGV interface" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Here we focus on one particular variant at position 3243 for reasons that will become apparent in the next section.</figcaption></figure>
+  <figure id="figure-7"><img src="../../images/mt_igv.png" alt="IGV interface. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Here we focus on one particular variant at position 3243 for reasons that will become apparent in the next section.</figcaption></figure>
 </blockquote>
 
 <h2 id="comparing-frequencies">Comparing frequencies</h2>
@@ -1447,7 +1428,7 @@ chrM	5539	.	A	G	3281.62	.	AB=0;ABP=0;AC=1;AF=0.5;AN=2;AO=379;CIGAR=1X;DP=787;DPB
   </blockquote>
 </blockquote>
 
-<figure id="figure-8"><img src="../../images/mt_tab.png" alt="VCFtoTab-delimited output" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> The columns in the above dataset represent INFO and Genotype fields on the original VCF dataset.</figcaption></figure>
+<figure id="figure-8"><img src="../../images/mt_tab.png" alt="VCFtoTab-delimited output. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> The columns in the above dataset represent INFO and Genotype fields on the original VCF dataset.</figcaption></figure>
 
 <p>Let’s restrict ourselves to a few key columns:</p>
 
@@ -1552,7 +1533,7 @@ Child   341    694
 <li id="Cree2008">Cree, L. M., D. C. Samuels, S. C. de Sousa Lopes, H. K. Rajasimha, P. Wonnapinij <i>et al.</i>, 2008 <b>A reduction of mitochondrial DNA molecules during embryogenesis explains the rapid segregation of genotypes</b>. Nature Genetics 40: 249–254. <a href="https://doi.org/10.1038/ng.2007.63">10.1038/ng.2007.63</a></li>
 <li id="Li2013">Li, H., 2013 <b>Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM</b>.</li>
 <li id="Rebolledo-Jaramillo2014">Rebolledo-Jaramillo, B., M. S.-W. Su, N. Stoler, J. A. McElhoe, B. Dickins <i>et al.</i>, 2014 <b>Maternal age effect and severe germ-line bottleneck in the inheritance of human mitochondrial DNA</b>. Proceedings of the National Academy of Sciences 111: 15474–15479. <a href="https://doi.org/10.1073/pnas.1409328111">10.1073/pnas.1409328111</a> <a href="https://www.pnas.org/content/111/43/15474">https://www.pnas.org/content/111/43/15474</a></li>
-<li id="Li2015">Li, D., C.-M. Liu, R. Luo, K. Sadakane, and T.-W. Lam, 2015 <b>MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph</b>. Bioinformatics 31: 1674–1676. <a href="https://doi.org/10.1093/bioinformatics/btv033">10.1093/bioinformatics/btv033</a></li>
+<li id="Li2015">Li, W., J. Köster, H. Xu, C.-H. Chen, T. Xiao <i>et al.</i>, 2015 <b>Quality control,  modeling,  and visualization of CRISPR screens with MAGeCK-VISPR</b>. 16: <a href="https://doi.org/10.1186/s13059-015-0843-6">10.1186/s13059-015-0843-6</a></li>
 <li id="Olson2015">Olson, N. D., S. P. Lund, R. E. Colman, J. T. Foster, J. W. Sahl <i>et al.</i>, 2015 <b>Best practices for evaluating single nucleotide variant calling methods for microbial genomics</b>. Frontiers in Genetics 6: 235. <a href="https://doi.org/10.3389/fgene.2015.00235">10.3389/fgene.2015.00235</a></li>
 <li id="Tan2015">Tan, A., G. R. Abecasis, and H. M. Kang, 2015 <b>Unified representation of genetic variants</b>. Bioinformatics 31: 2202–2204. <a href="https://doi.org/10.1093/bioinformatics/btv112">10.1093/bioinformatics/btv112</a></li></ol>
                 
@@ -1560,7 +1541,9 @@ Child   341    694
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />

@@ -134,7 +134,7 @@
                 العربية
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdata-science%2Ftutorials%2Fsql-advanced%2Ftutorial.html&edit-text=&act=url" title="">
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/data-science/tutorials/sql-advanced/tutorial.html&edit-text=&act=url" title="">
                 And more!
                 </a>
             </div>
@@ -276,7 +276,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:19 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Advanced SQL",
   "interactivityType": "mixed",
@@ -312,6 +312,7 @@
   "name": "Hands-on for 'Advanced SQL' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/sql-advanced/tutorial.html",
   "timeRequired": "PT3H",
+  "keywords": "SQL, jupyter-notebook",
   "description": "The questions this  addresses are:\n - How can I calculate sums, averages, and other summary values?\n - How can I combine data from multiple tables?\n - How should I format data in a database, and why?\n - How can I create, modify, and delete tables and data?\n - How can I access databases from programs written in Python?\n\n\\nThe objectives are:\n - Define aggregation and give examples of its use.\n - Write queries that compute aggregated values.\n - Trace the execution of a query that performs aggregation.\n - Explain how missing data is handled during aggregation.\n - Explain the operation of a query that joins two tables.\n - Explain how to restrict the output of a query containing a join to only include meaningful combinations of values.\n - Write queries that join tables on equal keys.\n - Explain what primary and foreign keys are, and why they are useful.\n - Explain what an atomic value is.\n - Distinguish between atomic and non-atomic values.\n - Explain why every value in a database should be atomic.\n - Explain what a primary key is and why every record should have one.\n - Identify primary keys in database tables.\n - Explain why database entries should not contain redundant information.\n - Identify redundant information in databases.\n - Write statements that create tables.\n - Write statements to insert, modify, and delete records.\n - Write short programs that execute SQL queries.\n - Trace the execution of a program that contains an SQL query.\n - Explain why most database applications are written in a general-purpose language rather than in SQL.\n\n",
   "inLanguage": {
     "@type": "Language",
@@ -373,15 +374,24 @@
     <h1 data-toc-skip>Advanced SQL</h1>
     
 
-    <div class="contributors-line">Authors: 
 
- <a href="/training-material/hall-of-fame/carpentries/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/carpentries" alt="Avatar">The Carpentries</a> <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Avatar">Helena Rasche</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/carpentries/" class="contributor-badge contributor-carpentries"><img src="https://avatars.githubusercontent.com/carpentries?s=27" alt="Avatar">The Carpentries</a>
+
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
         <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
@@ -492,6 +502,10 @@
                         
                     
                         
+                    
+                        
+                    
+                        
                             
                             <li> Introduction to SQL:
                             
@@ -501,6 +515,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -570,9 +586,11 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 11, 2021 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 19, 2021 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
             <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
         </div>
     </blockquote>
@@ -602,6 +620,12 @@
                             <li>Open a Terminal in JupyterLab with <b>File -> New -> Terminal</b></li>
                             <li>Run <code>wget https://training.galaxyproject.org/training-material/topics/data-science/tutorials/sql-advanced/tutorial.md.ipynb</code></li>
                             <li>Select the notebook that appears in the list of files on the left.</li>
+                        </ol>
+                    </p>
+                    <p><b>Downloading the notebook</b>
+                        <ol>
+                            <li>Right click this link: <a href="https://training.galaxyproject.org/training-material/topics/data-science/tutorials/sql-advanced/tutorial.md.ipynb">tutorial.ipynb</a></li>
+                            <li>Save Link As..</li>
                         </ol>
                     </p>
                 </blockquote>
@@ -662,7 +686,7 @@ and produces a single record as output:</p>
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">min</span><span class="p">(</span><span class="n">dated</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">Visited</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p><img src="../../images/carpentries-sql/sql-aggregation.svg" alt="SQL Aggregation" loading="lazy" /></p>
+<p><img src="../../images/carpentries-sql/sql-aggregation.svg" alt="SQL Aggregation. " loading="lazy" /></p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">max</span><span class="p">(</span><span class="n">dated</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">Visited</span><span class="p">;</span>
 </code></pre></div></div>
@@ -858,8 +882,7 @@ and what was their average value?</p>
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -886,8 +909,7 @@ As such it is not included in the calculation.</p>
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -931,8 +953,7 @@ The <code class="language-plaintext highlighter-rouge">reading</code> value is s
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -951,8 +972,7 @@ such as:</p>
   <p>Can you find a way to order the list by su<span class="notranslate">rna</span>me?</p>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <h1 id="combining-data">Combining Data</h1>
@@ -969,7 +989,7 @@ We need to combine these tables somehow.</p>
 
 <p>This figure shows the relations between the tables:</p>
 
-<p><img src="../../images/carpentries-sql/sql-join-structure.svg" alt="Survey Database Structure" loading="lazy" /></p>
+<p><img src="../../images/carpentries-sql/sql-join-structure.svg" alt="Survey Database Structure. " loading="lazy" /></p>
 
 <p>The SQL command to do this is <code class="language-plaintext highlighter-rouge">JOIN</code>.
 To see how it works,
@@ -1117,8 +1137,7 @@ AND Survey.quant = 'rad';
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -1151,8 +1170,7 @@ WHERE Person.personal = 'Frank';
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -1165,8 +1183,7 @@ ON Site.lat &lt; -49.0 AND Site.name = Visited.site AND Visited.dated &gt;= '193
 </code></pre></div>  </div>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -1358,8 +1375,7 @@ ORDER BY Visited.dated;
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <p>A good visual explanation of joins can be found <a href="https://sql-joins.leopard.in.ua/">here</a></p>
@@ -1503,8 +1519,7 @@ If we need to work with the month, day, or year separately, we can use the SQL f
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -1538,8 +1553,7 @@ I.e., what value or combination of values uniquely identifies a record?</p>
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <h1 id="creating-and-modifying-data">Creating and Modifying Data</h1>
@@ -1741,8 +1755,7 @@ but the files themselves live on disk.</p>
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 <blockquote class="question">
@@ -1776,8 +1789,7 @@ of the database</li>
   </blockquote>
 </blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="k">sql</span>
-<span class="c1">-- Try solutions here!</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Try solutions here!</span>
 </code></pre></div></div>
 
 
@@ -1896,7 +1908,9 @@ of the database</li>
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -1950,7 +1964,7 @@ author = "The Carpentries and Helena Rasche",
 title = "Advanced SQL (Galaxy Training Materials)",
 year = "2021",
 month = "10",
-day = "11"
+day = "19"
 url = "\url{https://training.galaxyproject.org/training-material/topics/data-science/tutorials/sql-advanced/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1996,6 +2010,12 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         
             <ul>
                 
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     

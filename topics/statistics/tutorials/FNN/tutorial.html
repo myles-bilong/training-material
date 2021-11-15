@@ -134,7 +134,7 @@
                 العربية
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fstatistics%2Ftutorials%2FFNN%2Ftutorial.html&edit-text=&act=url" title="">
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/FNN/tutorial.html&edit-text=&act=url" title="">
                 And more!
                 </a>
             </div>
@@ -276,7 +276,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:26 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Deep Learning (Part 1) - Feedforward neural networks (FNN)",
   "interactivityType": "mixed",
@@ -383,15 +383,21 @@
     <h1 data-toc-skip>Deep Learning (Part 1) - Feedforward neural networks (FNN)</h1>
     
 
-    <div class="contributors-line">Authors: 
 
- <a href="/training-material/hall-of-fame/kxk302/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/kxk302" alt="Avatar">Kaivan Kamali</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/kxk302/" class="contributor-badge contributor-kxk302"><img src="https://avatars.githubusercontent.com/kxk302?s=27" alt="Avatar">Kaivan Kamali</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
         <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
@@ -600,6 +606,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
             Galaxy Africa
         </a>
@@ -609,8 +617,6 @@
         <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
             Galaxy India
         </a>
-        
-    
         
     
         
@@ -692,8 +698,6 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
             UseGalaxy.be
         </a>
@@ -743,7 +747,9 @@
 
         <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jun 26, 2021 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
             <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
         </div>
     </blockquote>
@@ -800,7 +806,7 @@ neuron. A synapse can either enhance or inhibit the signal that passes through i
 by changing the effectiveness of synapse. If the signals received exceeds a threshold, the neuron
 <em>fires</em>, i.e., it transmits a signal to other neurons. If not, it will not fire.</p>
 
-<figure id="figure-1"><img src="../../images/FNN_bio_neuron.png" alt="Sketch of a biological neuron and its components" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> A biological neuron (<span class="citation"><a href="#JainEtAl">Jain <i>et al.</i> 1996</a></span>)</figcaption></figure>
+<figure id="figure-1"><img src="../../images/FNN_bio_neuron.png" alt="Sketch of a biological neuron and its components. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> A biological neuron (<span class="citation"><a href="#JainEtAl">Jain <i>et al.</i> 1996</a></span>)</figcaption></figure>
 
 <p>Cerebral cortex, the outer most layer of the brain, is a sheet of neurons about 2 to 3 mm thick,
 with a surface area of about 2,200 \(cm^{2}\). Cerebral cortex has about \(10^{11}\) neurons.
@@ -837,7 +843,7 @@ output is 0 (it does not fire). Bias allows us to shift the activation function.
 <p>Figure 2 shows a Perceptron, a single layer FNN, where the input is 3 dimensional (input layer has
 3 nodes), and output is 1 dimensional (output layer has 1 node).</p>
 
-<figure id="figure-2"><img src="../../images/FFNN_no_hidden.png" alt="Neurons forming the input and output layers of a single layer feedforward neural network" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> A perceptron</figcaption></figure>
+<figure id="figure-2"><img src="../../images/FFNN_no_hidden.png" alt="Neurons forming the input and output layers of a single layer feedforward neural network. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> A perceptron</figcaption></figure>
 
 <p>In supervised learning, we are given a set of input-output pairs, called the <em>training
 set</em>. Given the training set, the learning algorithm (iteratively) adjusts the model
@@ -853,7 +859,7 @@ Approximation Theorem, a FNN with one hidden layer can represent any function (<
 although in practice training such a model is very difficult (if not impossible), hence, we usually
 add multiple hidden layers to solve complex problems.</p>
 
-<figure id="figure-3"><img src="../../images/FFNN.png" alt="Neurons forming the input, output, and hidden layers of a multi-layer feedforward neural network" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Feedforward neural network with a hidden layer. Biases to hidden/output layer neurons are omitted for clarity</figcaption></figure>
+<figure id="figure-3"><img src="../../images/FFNN.png" alt="Neurons forming the input, output, and hidden layers of a multi-layer feedforward neural network. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Feedforward neural network with a hidden layer. Biases to hidden/output layer neurons are omitted for clarity</figcaption></figure>
 
 <p>The problem with multi-layer FNN was lack of a learning algorithm, as the Perceptron’s learning
 algorithm could not be extended to multi-layer FNN. This along with Minsky and Papert highlighting
@@ -877,7 +883,7 @@ techniques that can prevent that (<span class="citation"><a href="#KukackaEtAl">
 <p>There are many activation functions besides the step function used in Perceptron (<span class="citation"><a href="#nwankpaEtAl">Nwankpa <i>et al.</i> 2018</a></span>). Figure 4 shows
 some of the more common activation functions.</p>
 
-<figure id="figure-4"><img src="../../images/FNN_activation_functions.png" alt="Table showing the formula, graph, derivative, and range of common activation functions" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Common activation functions (Source: https://en.wikipedia.org/wiki/Activation_function)</figcaption></figure>
+<figure id="figure-4"><img src="../../images/FNN_activation_functions.png" alt="Table showing the formula, graph, derivative, and range of common activation functions. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Common activation functions (Source: https://en.wikipedia.org/wiki/Activation_function)</figcaption></figure>
 
 <p>Linear activation function is used in the output layer of a network when we have a regression problem. It does
 not make sense to use it in all layers, as such multi-layer network can be reduced to a single layer network.
@@ -933,7 +939,7 @@ mutually exclusive, we use another method called <em>multi-hot encoding</em>. Su
 classification, where an image can have a dog, panda, or cat in it. We represent the label by a vector of 3, and if
 dog and cat are present in the image, first and third element of the vector are one and the second element is zero (<span class="citation"><a href="#Bagheri">Bagheri 2020</a></span>).</p>
 
-<figure id="figure-5"><img src="../../images/FNN_output_encoding.png" alt="Three images illustrating binary, multiclass, and multilabel classifications and their label representation" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Examples of binary, multiclass, and multilabel classifications and their label representation (<span class="citation"><a href="#Bagheri">Bagheri 2020</a></span>)</figcaption></figure>
+<figure id="figure-5"><img src="../../images/FNN_output_encoding.png" alt="Three images illustrating binary, multiclass, and multilabel classifications and their label representation. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Examples of binary, multiclass, and multilabel classifications and their label representation (<span class="citation"><a href="#Bagheri">Bagheri 2020</a></span>)</figcaption></figure>
 
 <p>Figure 5 shows examples of binary, multiclass, and multilabel classification problems and their associated one-hot
 encoded or multi-hot encoded labels. The output layer of a neural network for binary classification usually has a
@@ -1066,7 +1072,7 @@ https://zenodo.org/record/4660497/files/y_train.tsv
       <p>Check that the datatype of all the four datasets is <code class="language-plaintext highlighter-rouge">tabular</code>. If not, change the dataset’s datatype to tabular.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">tabular</code></li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">tabular</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
@@ -1250,11 +1256,11 @@ determination) score for our model is 0.87 (out of the best possible score of 1.
 The best value for RMSE is obviously 0 for perfect prediction. The third graph (Figure 8) plots residual (predicted - true) vs
 predicted values. The better our model’s predictions, the closer the points to y=0 line.</p>
 
-<figure id="figure-6"><img src="../../images/FNN_true_predicted_plot.png" alt="True vs predicted values plot" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> True vs predicted values plot</figcaption></figure>
+<figure id="figure-6"><img src="../../images/FNN_true_predicted_plot.png" alt="True vs predicted values plot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> True vs predicted values plot</figcaption></figure>
 
-<figure id="figure-7"><img src="../../images/FNN_scatter_plot.png" alt="Scatterplot of true vs predicted values plot" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Scatterplot of true vs predicted values plot</figcaption></figure>
+<figure id="figure-7"><img src="../../images/FNN_scatter_plot.png" alt="Scatterplot of true vs predicted values plot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Scatterplot of true vs predicted values plot</figcaption></figure>
 
-<figure id="figure-8"><img src="../../images/FNN_residual_plot.png" alt="Residual vs predicted values plot" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Residual vs predicted values plot</figcaption></figure>
+<figure id="figure-8"><img src="../../images/FNN_residual_plot.png" alt="Residual vs predicted values plot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Residual vs predicted values plot</figcaption></figure>
 
 <h1 class="no_toc" id="conclusion">Conclusion</h1>
 
@@ -1289,7 +1295,9 @@ and how backpropagation minimizes the cost function. Finally, we implemented a F
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />

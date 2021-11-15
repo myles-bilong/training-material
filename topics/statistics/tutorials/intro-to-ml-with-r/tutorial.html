@@ -134,7 +134,7 @@
                 العربية
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fstatistics%2Ftutorials%2Fintro-to-ml-with-r%2Ftutorial.html&edit-text=&act=url" title="">
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/intro-to-ml-with-r/tutorial.html&edit-text=&act=url" title="">
                 And more!
                 </a>
             </div>
@@ -276,7 +276,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:07 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Introduction to Machine Learning using R",
   "interactivityType": "mixed",
@@ -413,15 +413,21 @@
     <h1 data-toc-skip>Introduction to Machine Learning using R</h1>
     
 
-    <div class="contributors-line">Authors: 
 
- <a href="/training-material/hall-of-fame/fpsom/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/fpsom" alt="Avatar">Fotis E. Psomopoulos</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/fpsom/" class="contributor-badge contributor-fpsom"><img src="https://avatars.githubusercontent.com/fpsom?s=27" alt="Avatar">Fotis E. Psomopoulos</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
         <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
@@ -566,6 +572,12 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
                             
                             <li> R basics in Galaxy:
                             
@@ -588,6 +600,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Advanced R in Galaxy:
                             
@@ -597,6 +611,10 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -687,7 +705,9 @@
 
         <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 7, 2021 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
             <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
         </div>
     </blockquote>
@@ -988,7 +1008,7 @@ breastCancerDataNoID %&gt;% head()
 </span><span class="n">ggpairs</span><span class="p">(</span><span class="n">breastCancerDataNoID</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">],</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Diagnosis</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="o">=</span><span class="m">0.4</span><span class="p">))</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-2"><img src="../../images/intro-to-ml-with-r/ggpairs5variables.png" alt="ggpairs output of the first 5 variables" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> ggpairs output of the first 5 variables</figcaption></figure>
+      <figure id="figure-2"><img src="../../images/intro-to-ml-with-r/ggpairs5variables.png" alt="ggpairs output of the first 5 variables. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> ggpairs output of the first 5 variables</figcaption></figure>
     </li>
     <li>
       <p>Next, we need to center and scale the data.</p>
@@ -1050,7 +1070,7 @@ M:212     1st Qu.:-0.6888   1st Qu.:-0.7253   1st Qu.:-0.6913   1st Qu.:-0.6666
 </span><span class="n">ggpairs</span><span class="p">(</span><span class="n">breastCancerDataNoID_tr</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">],</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Diagnosis</span><span class="p">,</span><span class="w"> </span><span class="n">alpha</span><span class="o">=</span><span class="m">0.4</span><span class="p">))</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-3"><img src="../../images/intro-to-ml-with-r/ggpairs5variables_tr.png" alt="ggpairs output of the first 5 variables of the recentered/rescaled data" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> ggpairs output of the first 5 variables of the recentered/rescaled data</figcaption></figure>
+      <figure id="figure-3"><img src="../../images/intro-to-ml-with-r/ggpairs5variables_tr.png" alt="ggpairs output of the first 5 variables of the recentered/rescaled data. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> ggpairs output of the first 5 variables of the recentered/rescaled data</figcaption></figure>
 
       <blockquote class="question">
         <h3 id="question-question-2"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
@@ -1184,7 +1204,7 @@ Cumulative Proportion  0.99992 0.99997 1.00000 1.00000
   </span><span class="n">theme</span><span class="p">(</span><span class="n">legend.position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bottom"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-4"><img src="../../images/intro-to-ml-with-r/pc12Visualization_Full.png" alt="Visualization of the first two PCs on the UCI Breast Cancer dataset" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Visualization of the first two PCs on the UCI Breast Cancer dataset</figcaption></figure>
+      <figure id="figure-4"><img src="../../images/intro-to-ml-with-r/pc12Visualization_Full.png" alt="Visualization of the first two PCs on the UCI Breast Cancer dataset. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Visualization of the first two PCs on the UCI Breast Cancer dataset</figcaption></figure>
     </li>
   </ol>
 
@@ -1280,7 +1300,7 @@ Also, note that k-means requires the number of clusters to be defined beforehand
   </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"K-Means clusters against PCA"</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"PC1"</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"PC2"</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Cluster"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Diagnosis"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-5"><img src="../../images/intro-to-ml-with-r/kmeans-pc12-Visualization.png" alt="Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset</figcaption></figure>
+      <figure id="figure-5"><img src="../../images/intro-to-ml-with-r/kmeans-pc12-Visualization.png" alt="Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Visualization of the k-means results against the first two PCs on the UCI Breast Cancer dataset</figcaption></figure>
 
       <p>This is a rather complex plotting command that is based on the <code class="language-plaintext highlighter-rouge">ggplot</code> library. For an overview of how <code class="language-plaintext highlighter-rouge">ggplot</code> works, have a look at the <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-counts-to-viz-in-r/tutorial.html"><span class="notranslate">RNA</span> Seq Counts to Viz in R</a> tutorial.</p>
     </li>
@@ -1385,7 +1405,7 @@ breastCancerData$Diagnosis |         1 |         2 | Row Total |
   </span><span class="n">scale_x_continuous</span><span class="p">(</span><span class="n">breaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">20</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">))</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-6"><img src="../../images/intro-to-ml-with-r/elbow-plot-kmeans.png" alt="Elbow plot for multiple values of k" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> Elbow plot for multiple values of k</figcaption></figure>
+      <figure id="figure-6"><img src="../../images/intro-to-ml-with-r/elbow-plot-kmeans.png" alt="Elbow plot for multiple values of k. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> Elbow plot for multiple values of k</figcaption></figure>
 
       <blockquote class="question">
         <h3 id="question-question-4"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
@@ -1466,7 +1486,7 @@ The algorithm works as follows:</p>
 </span><span class="n">plot</span><span class="p">(</span><span class="n">hclust_avg</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-7"><img src="../../images/intro-to-ml-with-r/hclust-fig1.png" alt="Hierarchical clustering (attempt 1)" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Hierarchical clustering (attempt 1)</figcaption></figure>
+      <figure id="figure-7"><img src="../../images/intro-to-ml-with-r/hclust-fig1.png" alt="Hierarchical clustering (attempt 1). " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Hierarchical clustering (attempt 1)</figcaption></figure>
 
       <p>Notice how the dendrogram is built and every data point finally merges into a single cluster with the height(distance) shown on the y-axis.</p>
     </li>
@@ -1484,7 +1504,7 @@ The algorithm works as follows:</p>
 </span><span class="c1"># Draw a line at the height that the cut takes place</span><span class="w">
 </span><span class="n">abline</span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'red'</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">lty</span><span class="o">=</span><span class="m">2</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
-      <figure id="figure-8"><img src="../../images/intro-to-ml-with-r/hclust-fig2.png" alt="Hierarchical clustering (attempt 2)" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Hierarchical clustering (attempt 2)</figcaption></figure>
+      <figure id="figure-8"><img src="../../images/intro-to-ml-with-r/hclust-fig2.png" alt="Hierarchical clustering (attempt 2). " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Hierarchical clustering (attempt 2)</figcaption></figure>
     </li>
     <li>
       <p>Now we can see the two clusters enclosed in two different colored boxes. We can also use the <code class="language-plaintext highlighter-rouge">color_branches()</code> function from the <code class="language-plaintext highlighter-rouge">dendextend</code> library to visualize our tree with different colored branches.</p>
@@ -1496,7 +1516,7 @@ The algorithm works as follows:</p>
 </span><span class="n">plot</span><span class="p">(</span><span class="n">avg_col_dend</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Cluster dendrogram with color per cluster (k = 2)"</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Breast Cancer ID"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Height"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-9"><img src="../../images/intro-to-ml-with-r/hclust-fig3.png" alt="Hierarchical clustering (attempt 3)" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 9:</span> Hierarchical clustering (attempt 3)</figcaption></figure>
+      <figure id="figure-9"><img src="../../images/intro-to-ml-with-r/hclust-fig3.png" alt="Hierarchical clustering (attempt 3). " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 9:</span> Hierarchical clustering (attempt 3)</figcaption></figure>
     </li>
     <li>
       <p>We can change the way branches are colored, to reflect the <code class="language-plaintext highlighter-rouge">Diagnosis</code> value:</p>
@@ -1505,7 +1525,7 @@ The algorithm works as follows:</p>
 </span><span class="n">plot</span><span class="p">(</span><span class="n">avg_col_dend</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Cluster dendrogram with Diagnosis color"</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Breast Cancer ID"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Height"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-10"><img src="../../images/intro-to-ml-with-r/hclust-fig4.png" alt="Hierarchical clustering (attempt 4)" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 10:</span> Hierarchical clustering (attempt 4)</figcaption></figure>
+      <figure id="figure-10"><img src="../../images/intro-to-ml-with-r/hclust-fig4.png" alt="Hierarchical clustering (attempt 4). " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 10:</span> Hierarchical clustering (attempt 4)</figcaption></figure>
     </li>
     <li>
       <p>TODO? Step Title</p>
@@ -1517,7 +1537,7 @@ The algorithm works as follows:</p>
   </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hierarchical clustering (cut at k=2) against PCA"</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"PC1"</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"PC2"</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Cluster"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Diagnosis"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-11"><img src="../../images/intro-to-ml-with-r/hclust-pc12-Visualization.png" alt="Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 11:</span> Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset</figcaption></figure>
+      <figure id="figure-11"><img src="../../images/intro-to-ml-with-r/hclust-pc12-Visualization.png" alt="Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 11:</span> Visualization of the Hierarchical clustering (cut at k=2) results against the first two PCs on the UCI Breast Cancer dataset</figcaption></figure>
     </li>
   </ol>
 
@@ -1631,7 +1651,7 @@ The algorithm works as follows:</p>
 4 -1.00000000      6 0.2727273 0.3006993 0.04330166
 </code></pre></div>      </div>
 
-      <figure id="figure-12"><img src="../../images/intro-to-ml-with-r/decisionTreeFull.png" alt="Full decision tree" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 12:</span> Full decision tree</figcaption></figure>
+      <figure id="figure-12"><img src="../../images/intro-to-ml-with-r/decisionTreeFull.png" alt="Full decision tree. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 12:</span> Full decision tree</figcaption></figure>
 
       <p>The parameters that we used reflect the following aspects of the model:</p>
       <ul>
@@ -1661,7 +1681,7 @@ B  245  34
 M   9   109
 </code></pre></div>      </div>
 
-      <figure id="figure-13"><img src="../../images/intro-to-ml-with-r/decisionTreePruned.png" alt="Pruned decision tree" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 13:</span> Pruned decision tree</figcaption></figure>
+      <figure id="figure-13"><img src="../../images/intro-to-ml-with-r/decisionTreePruned.png" alt="Pruned decision tree. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 13:</span> Pruned decision tree</figcaption></figure>
 
       <blockquote class="question">
         <h3 id="question-question-7"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
@@ -1694,7 +1714,7 @@ M   9   109
                 M   1  53
 </code></pre></div>      </div>
 
-      <figure id="figure-14"><img src="../../images/intro-to-ml-with-r/predictionPlot.png" alt="Prediction Plot" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 14:</span> Prediction Plot</figcaption></figure>
+      <figure id="figure-14"><img src="../../images/intro-to-ml-with-r/predictionPlot.png" alt="Prediction Plot. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 14:</span> Prediction Plot</figcaption></figure>
     </li>
   </ol>
 </blockquote>
@@ -1787,7 +1807,7 @@ M  12 131  0.08391608
       <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot</span><span class="p">(</span><span class="n">rf</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-15"><img src="../../images/intro-to-ml-with-r/error-rate-rf.png" alt="Error rate plot for the Random Forest model" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 15:</span> Error rate plot for the Random Forest model</figcaption></figure>
+      <figure id="figure-15"><img src="../../images/intro-to-ml-with-r/error-rate-rf.png" alt="Error rate plot for the Random Forest model. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 15:</span> Error rate plot for the Random Forest model</figcaption></figure>
     </li>
     <li>
       <p>We can also review which of the variables has the highest “importance” (i.e. impact to the performance of the model):</p>
@@ -1832,7 +1852,7 @@ Symmetry.Worst                 2.1507714
 Fractal.Dimension.Worst        1.1498020
 </code></pre></div>      </div>
 
-      <figure id="figure-16"><img src="../../images/intro-to-ml-with-r/importance-variables.png" alt="Importance of the individual variables" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 16:</span> Importance of the individual variables</figcaption></figure>
+      <figure id="figure-16"><img src="../../images/intro-to-ml-with-r/importance-variables.png" alt="Importance of the individual variables. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 16:</span> Importance of the individual variables</figcaption></figure>
     </li>
     <li>
       <p>Let’s try to do a prediction of the <code class="language-plaintext highlighter-rouge">Diagnosis</code> for the test set, using the new model. The margin of a data point is as the proportion of votes for the correct class minus maximum proportion of votes for other classes. Positive margin means correct classification.</p>
@@ -1850,7 +1870,7 @@ Fractal.Dimension.Worst        1.1498020
                    M   2  63
 </code></pre></div>      </div>
 
-      <figure id="figure-17"><img src="../../images/intro-to-ml-with-r/margin-rf.png" alt="Margin plot for the Random Forest" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 17:</span> Margin plot for the Random Forest</figcaption></figure>
+      <figure id="figure-17"><img src="../../images/intro-to-ml-with-r/margin-rf.png" alt="Margin plot for the Random Forest. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 17:</span> Margin plot for the Random Forest</figcaption></figure>
     </li>
     <li>
       <p>Feature selection: We can evaluate the prediction performance of models with reduced numbers of variables that are ranked by their importance.</p>
@@ -1859,7 +1879,7 @@ Fractal.Dimension.Worst        1.1498020
 </span><span class="n">with</span><span class="p">(</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">plot</span><span class="p">(</span><span class="n">n.var</span><span class="p">,</span><span class="w"> </span><span class="n">error.cv</span><span class="p">,</span><span class="w"> </span><span class="n">log</span><span class="o">=</span><span class="s2">"x"</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">2</span><span class="p">))</span><span class="w">
 </span></code></pre></div>      </div>
 
-      <figure id="figure-18"><img src="../../images/intro-to-ml-with-r/rfcv.png" alt="Random Forest Cross-Valdidation for feature selection" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 18:</span> Random Forest Cross-Valdidation for feature selection</figcaption></figure>
+      <figure id="figure-18"><img src="../../images/intro-to-ml-with-r/rfcv.png" alt="Random Forest Cross-Valdidation for feature selection. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 18:</span> Random Forest Cross-Valdidation for feature selection</figcaption></figure>
     </li>
   </ol>
 
@@ -1913,7 +1933,7 @@ Coefficients:
 </span><span class="n">plot</span><span class="p">(</span><span class="n">preds</span><span class="p">,</span><span class="w"> </span><span class="n">bc</span><span class="o">$</span><span class="n">Radius.Mean</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Prediction"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Observed"</span><span class="p">)</span><span class="w">
 </span><span class="n">abline</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
-      <figure id="figure-19"><img src="../../images/intro-to-ml-with-r/lm_full_dataset.png" alt="Prediction Plot GLM" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 19:</span> Prediction Plot GLM</figcaption></figure>
+      <figure id="figure-19"><img src="../../images/intro-to-ml-with-r/lm_full_dataset.png" alt="Prediction Plot GLM. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 19:</span> Prediction Plot GLM</figcaption></figure>
     </li>
     <li>
       <p>We can also have a better look at what the model contains with <code class="language-plaintext highlighter-rouge">summary(bc_model_full)</code>:</p>
@@ -1963,7 +1983,7 @@ F-statistic: 1.111e+04 on 2 and 566 DF,  p-value: &lt; 2.2e-16
   </span><span class="n">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
   </span><span class="n">geom_abline</span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
-      <figure id="figure-20"><img src="../../images/intro-to-ml-with-r/lm_train_dataset.png" alt="Prediction Plot GLM" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 20:</span> Prediction Plot GLM</figcaption></figure>
+      <figure id="figure-20"><img src="../../images/intro-to-ml-with-r/lm_train_dataset.png" alt="Prediction Plot GLM. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 20:</span> Prediction Plot GLM</figcaption></figure>
 
       <p>You will note that it is quite similar to when using whole dataset</p>
     </li>
@@ -2084,7 +2104,9 @@ F-statistic: 1.111e+04 on 2 and 566 DF,  p-value: &lt; 2.2e-16
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />

@@ -134,7 +134,7 @@
                 العربية
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html&edit-text=&act=url" title="">
                 And more!
                 </a>
             </div>
@@ -276,7 +276,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:11 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Creating content in Markdown",
   "interactivityType": "mixed",
@@ -372,15 +372,30 @@
     <h1 data-toc-skip>Creating content in Markdown</h1>
     
 
-    <div class="contributors-line">Authors: 
 
- <a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bebatut" alt="Avatar">Bérénice Batut</a> <a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bgruening" alt="Avatar">Björn Grüning</a> <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/shiltemann" alt="Avatar">Saskia Hiltemann</a> <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Avatar">Helena Rasche</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge contributor-bebatut"><img src="https://avatars.githubusercontent.com/bebatut?s=27" alt="Avatar">Bérénice Batut</a>
+
+
+<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+
+
+<a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a>
+
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
         <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
@@ -472,7 +487,9 @@
 
         <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 11, 2021 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
             <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
         </div>
     </blockquote>
@@ -776,16 +793,16 @@ blabla
 </blockquote>
 
 <h2 id="adding-images-with-captions">Adding images with captions</h2>
-<p>To add an image in Markdown file, we need to use the markdown syntax for this: <code class="language-plaintext highlighter-rouge">&lt;img src="../../images/image.png" alt="proper alt text describing the image for visually impaired learners"  loading="lazy"&gt;</code>.</p>
+<p>To add an image in Markdown file, we need to use the markdown syntax for this: <code class="language-plaintext highlighter-rouge">&lt;img src="../../images/image.png" alt="proper alt text describing the image for visually impaired learners. "  loading="lazy"&gt;</code>.</p>
 
 <p>We have also added a small plugin to handle captions for each image:</p>
 
-<figure id="figure-1"><img src="../../images/image_caption_screenshot.png" alt="A textual description of the image" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Example of an image with a caption </figcaption></figure>
+<figure id="figure-1"><img src="../../images/image_caption_screenshot.png" alt="A textual description of the image. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Example of an image with a caption </figcaption></figure>
 <!-- Adding a space to the caption to not trigger figurigy skip_titles -->
 
 <p>The prefix “Figure 1.” is automatically added before its caption. This is done with the following Markdown syntax:</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../images/image.png "</span><span class="na">Example</span> <span class="na">of</span> <span class="na">an</span> <span class="na">image</span> <span class="na">with</span> <span class="na">a</span> <span class="na">caption</span><span class="err">""</span> <span class="na">alt=</span><span class="s">"A textual description of the image"</span>  <span class="na">loading=</span><span class="s">"lazy"</span><span class="nt">&gt;</span>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../images/image.png "</span><span class="na">Example</span> <span class="na">of</span> <span class="na">an</span> <span class="na">image</span> <span class="na">with</span> <span class="na">a</span> <span class="na">caption</span><span class="err">""</span> <span class="na">alt=</span><span class="s">"A textual description of the image. "</span>  <span class="na">loading=</span><span class="s">"lazy"</span><span class="nt">&gt;</span>
 </code></pre></div></div>
 
 <p>We can also cross-reference images inside our Markdown with an anchor. For example, we can link to <a href="#figure-1">the previous figure</a> using <code class="language-plaintext highlighter-rouge">[the display text](#figure-nb)</code> (changing <code class="language-plaintext highlighter-rouge">nb</code> with the image’s number).</p>
@@ -803,9 +820,9 @@ illustrative.</strong></p>
 
 <p>As an example for this image:</p>
 
-<figure id="figure-2"><img src="/training-material/topics/metagenomics/images/plasmid-metagenomics-nanopore/sequence_method.jpg" alt="alt text" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Example of an image with a caption </figcaption></figure>
+<figure id="figure-2"><img src="/training-material/topics/metagenomics/images/plasmid-metagenomics-nanopore/sequence_method.jpg" alt="alt text. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Example of an image with a caption </figcaption></figure>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"path/to/image.png "</span><span class="na">Example</span> <span class="na">of</span> <span class="na">an</span> <span class="na">image</span> <span class="na">with</span> <span class="na">a</span> <span class="na">caption</span><span class="err">""</span> <span class="na">alt=</span><span class="s">"Alt text (shown when image cannot be displayed)"</span>  <span class="na">loading=</span><span class="s">"lazy"</span><span class="nt">&gt;</span>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"path/to/image.png "</span><span class="na">Example</span> <span class="na">of</span> <span class="na">an</span> <span class="na">image</span> <span class="na">with</span> <span class="na">a</span> <span class="na">caption</span><span class="err">""</span> <span class="na">alt=</span><span class="s">"Alt text (shown when image cannot be displayed). "</span>  <span class="na">loading=</span><span class="s">"lazy"</span><span class="nt">&gt;</span>
 </code></pre></div></div>
 
 <table>
@@ -1177,7 +1194,7 @@ but may be helpful in some cases (for example to distinguish between single file
   <li>Keep only the part after the <code class="language-plaintext highlighter-rouge">=</code>, so <code class="language-plaintext highlighter-rouge"><span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/<span class="notranslate">galaxy</span>p/mz_to_sqlite/mz_to_sqlite/2.0.4+<span class="notranslate">galaxy</span>1</code> in this example</li>
 </ol>
 
-<p><img src="../../images/tool-id.png" alt="Finding the tool ID" loading="lazy" /></p>
+<p><img src="../../images/tool-id.png" alt="Finding the tool ID. " loading="lazy" /></p>
 
 <h2 id="questions-and-solution-boxes"><strong>Questions</strong> and <strong>solution</strong> boxes</h2>
 
@@ -2138,7 +2155,7 @@ some code that students should execute
 
 <p>If all worked well, it should look something like this, with a dropdown menu on the slides and/or tutorial showing the presence of a curated tutorial:</p>
 
-<p><img src="../../images/curated-translations.png" alt="example of the view in the topic page for a tutorial with a Spanish translation" loading="lazy" /></p>
+<p><img src="../../images/curated-translations.png" alt="example of the view in the topic page for a tutorial with a Spanish translation. " loading="lazy" /></p>
 
 <h2 id="other-languages">Other Languages</h2>
 <p>Would you like to add a different language to the GTN? Please contact us first (e.g. on <a href="https://gitter.im/Galaxy-Training-Network/Lobby">Gitter</a>), to discuss a long-term sustainability plan!</p>
@@ -2199,7 +2216,9 @@ some code that students should execute
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />

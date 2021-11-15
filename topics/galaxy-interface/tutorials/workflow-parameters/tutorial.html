@@ -134,7 +134,7 @@
                 العربية
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fworkflow-parameters%2Ftutorial.html&edit-text=&act=url" title="">
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url" title="">
                 And more!
                 </a>
             </div>
@@ -276,7 +276,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:41 +0000",
+  "dateModified": "1970-01-01 00:00:29 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Using Workflow Parameters",
   "interactivityType": "mixed",
@@ -358,15 +358,24 @@
     <h1 data-toc-skip>Using Workflow Parameters</h1>
     
 
-    <div class="contributors-line">Authors: 
 
- <a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mvdbeek" alt="Avatar">Marius van den Beek</a> <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Avatar">Helena Rasche</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge contributor-mvdbeek"><img src="https://avatars.githubusercontent.com/mvdbeek?s=27" alt="Avatar">Marius van den Beek</a>
+
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
+        
         <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
@@ -476,6 +485,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://cheminformatics.usegalaxy.eu/" title="ChemicalToolbox">
             ChemicalToolbox
         </a>
@@ -514,8 +525,6 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
             Galaxy Test
         </a>
@@ -540,8 +549,6 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
             HiCExplorer
         </a>
@@ -551,6 +558,8 @@
         <a class="dropdown-item" href="https://humancellatlas.usegalaxy.eu/" title="Human Cell Atlas">
             Human Cell Atlas
         </a>
+        
+    
         
     
         
@@ -634,8 +643,6 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
             UseGalaxy.be
         </a>
@@ -697,7 +704,9 @@
 
         <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 29, 2021 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
             <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
         </div>
     </blockquote>
@@ -760,7 +769,7 @@ of the select first tool.</p>
 <p>Instead of selecting a specific number of lines we can choose to insert a <span class="notranslate">workflow</span> parameter
 that allows the user to set this parameter when running the <span class="notranslate">workflow</span>.</p>
 
-<figure id="figure-1"><img src="../../images/connection-module.png" alt="Button for selecting connections" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> The new button for creating a <span class="notranslate">workflow</span> parameter connection. When you click this, it will add a new 'input' to the tool that can be connected, just like other tools in workflows.</figcaption></figure>
+<figure id="figure-1"><img src="../../images/connection-module.png" alt="Button for selecting connections. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> The new button for creating a <span class="notranslate">workflow</span> parameter connection. When you click this, it will add a new 'input' to the tool that can be connected, just like other tools in workflows.</figcaption></figure>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-updating-the-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Updating the <span class="notranslate">Workflow</span></h3>
@@ -824,7 +833,7 @@ E. coli UTI89 O18:K1:H7. UPEC)
   <p>Notice the new input that can be changed before the <span class="notranslate">workflow</span> is run</p>
 </blockquote>
 
-<figure id="figure-2"><img src="../../images/workflow_integer_param.gif" alt="Animation of simple integer workflow parameter" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Integer <span class="notranslate">workflow</span> parameter</figcaption></figure>
+<figure id="figure-2"><img src="../../images/workflow_integer_param.gif" alt="Animation of simple integer workflow parameter. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Integer <span class="notranslate">workflow</span> parameter</figcaption></figure>
 
 <blockquote class="tip">
   <h3 id="tip-tip-parameter-reuse"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Parameter Reuse</h3>
@@ -1059,7 +1068,9 @@ parameters from datasets!</p>
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
